@@ -1,1 +1,24 @@
+/* Menu */
+.menu li{
+    display: inline-block;
+}
 
+li a,boton{
+    display: inline-block;
+    color: aqua ;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.listaDesplegable{
+    display: none;
+    background-color: blanchedalmond ;
+}
+
+.listaDesplegable a{
+    color: chocolate;
+    display: block;
+    text-align: left;
+
+}
