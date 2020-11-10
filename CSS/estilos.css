@@ -1,24 +1,160 @@
-/* Menu */
-.menu li{
-    display: inline-block;
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box ;
 }
 
-li a,boton{
-    display: inline-block;
-    color: aqua ;
-    text-align: center;
+body{
+    background: white;
+}
+
+.navegacion{
+    width: 1000px;
+    margin: 30px auto;
+    background: midnightblue;
+}
+
+.navegacion ul{
+    list-style: none;    
+}
+
+.menu > li{
+position: relative;
+display: inline-block;
+}
+
+.menu > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.menu li a:hover{
+color: blue;
+transition: all .3s;
+}
+
+/*Submenu*/
+.submenu{
+    position: absolute;
+    /*background: cadetblue ;*/
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.submenu li a{
+    display: block;
+    padding: 15px;
+    color: white;
+    background: orange;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+
+.menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+}
+
+/*Submenurec*/
+
+.submenurec{
+    position: absolute;
+    /*background: cadetblue ;*/
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.submenurec li a{
+    display: block;
+    padding: 15px;
+    color: white;
+    background: orange;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+
+.menu li:hover .submenurec{
+    visibility: visible;
+    opacity: 1;
+}
+
+/*submenuaut*/
+
+.submenuaut{
+    position: absolute;
+    /*background: cadetblue ;*/
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.submenuaut li a{
+    display: block;
+    padding: 15px;
+    color: white;
+    background: orange;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+
+.menu li:hover .submenuaut{
+    visibility: visible;
+    opacity: 1;
+}
+
+.fase{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.inicio{
+    font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
 
 }
 
-.listaDesplegable{
-    display: none;
-    background-color: blanchedalmond ;
+.twitter-timeline{
+    position: relative;
+    display: flex;
+    
 }
 
-.listaDesplegable a{
-    color: chocolate;
-    display: block;
-    text-align: left;
+.concepto1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
 
+.concepto2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.evaluacion1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    font-size: x-large;   
+}
+
+.evaluacion2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    text-align: center;   
+    font-size: x-large;   
+}
+
+.autor{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    text-align: center;   
 }
