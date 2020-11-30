@@ -3,6 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Sergio Pineda">
+    <meta name="description" content="Propiedades básicas CSS3">
+    <meta name="keywords" content="css, propiedades">
     <title>Inicio</title>
     <link rel="stylesheet" href="CSS/estilos.css">
     <link rel="icon" type="image/jpg" href="imagenes/icono.png">
@@ -11,33 +14,34 @@
 
 <body>
     <img src="imagenes/logoUNAD.jpg" alt="logo">
-        <nav class="navegacion">
-            <ul class="menu">
-                <li><a href="inicio.html">Inicio</a>
-                </li>
-                <li><a href="#">Conceptos</a>
-                    <ul class="submenu">
-                        <li><a href="concepto1.html">Concepto 1</a></li>
-                        <li><a href="concepto2.html">Concepto 2</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Recursos</a>
-                    <ul class="submenurec">
-                        <li><a href="recurso1.html">Recurso 1</a></li>
-                        <li><a href="recurso2.html">Recurso 2</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Autoevaluacion</a>
-                    <ul class="submenuaut">
-                        <li><a href="eva1.html">Evaluacion 1</a></li>
-                        <li><a href="eva2.html">Evaluacion 2</a></li>
-                    </ul>
-                </li>
-                <li><a href="autor.html">Autor</a></li>
+    <nav class="navegacion">
+        <ul class="menu">
+            <li><a href="inicio.html">Inicio</a>
+            </li>
+            <li><a href="#">Conceptos</a>
+                <ul class="submenu">
+                    <li><a href="concepto1.html">Concepto 1</a></li>
+                    <li><a href="concepto2.html">Concepto 2</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Recursos</a>
+                <ul class="submenurec">
+                    <li><a href="recurso1.html">Recurso 1</a></li>
+                    <li><a href="recurso2.html">Recurso 2</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Autoevaluacion</a>
+                <ul class="submenuaut">
+                    <li><a href="eva1.html">Evaluacion 1</a></li>
+                    <li><a href="eva2.html">Evaluacion 2</a></li>
+                    <li><a href="autoeva.html">Autoevaluacion</a></li>
+                </ul>
+            </li>
+            <li><a href="autor.html">Autor</a></li>
 
-            </ul>
+        </ul>
 
-        </nav>
+    </nav>
     <br>
 
 
@@ -71,6 +75,35 @@
     les denomina elementos de bloque.
     </p><br><br>
 
+    <p>
+    <h2>Cambio de tipo de visualización y un tercer tipo intermedio </h2><br>
+
+    Bien, aparte de este comportamiento por defecto, es posible cambiar el modo en el que se visualiza/renderiza
+    cualquier elemento HTML de una página usando la propiedad CSS llamada display.<br>
+
+    Esta propiedad puede tomar muchos valores diferentes, pero los más comunes son estos tres:<br><br>
+
+    block: hace que el comportamiento del elemento sea como un bloque.<br>
+    inline: el elemento se renderizará en línea con otros elementos.<br>
+    inline-block: el elemento tendrá un comportamiento mezcla entre los dos anteriores, que ahora voy a describir.<br><br>
+
+    Así por ejemplo, aunque tengamos una etiqueta span que se renderiza en línea por defecto, si le aplicamos la
+    propiedad display:block; se renderizará como un bloque, es decir, sería exactamente igual que si hubiésemos puesto
+    un div.
+
+    El tercer valor de la lista anterior es muy interesante ya que permite obtener un comportamiento intermedio entre
+    los otros dos. Los elementos inline-block fluyen con el texto y demás elementos como si fueran elementos en-línea y
+    además respetan el ancho, el alto y los márgenes verticales. Son lo mejor de los dos mundos.
+    </p><br><br>
+
+    <p>
+    <h2>Cambio automático de modo </h2><br>
+    Una cuestión importante y que muchas veces se nos pasa por alto es que un elemento en línea puede cambiar de manera
+    automática y pasar a ser un elemento de bloque en ciertas circunstancias, sin que nos demos cuenta. En concreto si
+    lo flotamos con la propiedad CSS llamada float, aunque el elemento sea inline (incluso aunque lo indiquemos
+    explícitamente con un display:inline !important;) el elemento adquirirá automáticamente el estilo de bloque para
+    poder aplicar la flotación, que tiene preferencia. Esto es lo que indica el estándar específicamente.
+    </p>
     </p>
 </article>
 
